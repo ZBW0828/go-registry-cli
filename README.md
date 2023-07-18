@@ -8,21 +8,21 @@
  go build -o registry-cli main.go
 ```
 
-![image-20230718102216060](C:\Users\PC\AppData\Roaming\Typora\typora-user-images\image-20230718102216060.png)
-
-
-
 -a:列出所有镜像信息
 
-![image-20230718102517099](C:\Users\PC\AppData\Roaming\Typora\typora-user-images\image-20230718102517099.png)
+```
+./registry-cli list --url http://localhost:5000 -a
+```
 
 不加-a:只展示同一种镜像种创建时间最近的五个
 
-![image-20230718102456345](C:\Users\PC\AppData\Roaming\Typora\typora-user-images\image-20230718102456345.png)
-
-
+```
+./registry-cli list --url http://localhost:5000
+```
 
 --s:进行前缀匹配
 
-![image-20230718102613015](C:\Users\PC\AppData\Roaming\Typora\typora-user-images\image-20230718102613015.png)
+```
+./registry-cli list --url http://localhost:5000 -a --s nginx
+```
 
