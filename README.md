@@ -14,7 +14,7 @@
 ./registry-cli list --url http://localhost:5000 -a
 ```
 
-不加-a:只展示同一种镜像种创建时间最近的五个
+不加-a:只展示同一种镜像中创建时间最近的五个
 
 ```
 ./registry-cli list --url http://localhost:5000
